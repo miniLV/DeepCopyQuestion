@@ -43,12 +43,13 @@ DemoCellDelegate
     _block = block;
 }
 
+
 #pragma mark - setupUI
 - (void)setupUI{
     
     CGFloat naviH = 64;
     CGFloat tabBarH = 49;
-    CGFloat viewH = CGRectGetHeight(self.view.frame);
+    CGFloat viewH = 300;
     CGFloat viewW = CGRectGetWidth(self.view.frame);
     
     //tableView
@@ -99,9 +100,6 @@ DemoCellDelegate
     }
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.view endEditing:YES];
-}
 
 #pragma mark - privateDelegate
 - (void)endEditTextField:(UITextField *)sender{

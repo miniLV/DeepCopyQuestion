@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DemoModel : NSObject<NSCoding>
+@interface DemoModel : NSObject
 
 @property (nonatomic, copy)NSString *textFieldValue;
 
